@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id='topdiv'>
+    <h1 id='header'>Unit converter:</h1>
+    <h3> input -> output</h3>
+ <!-- Convert from:
+    <br>
+   Feet: <input type="checkbox">
+    Convert to:
+    <br>
+    Meters: <input type="checkbox">
+    
+    onchange="myFunction()"
+    -->
+  
+  <input id='input' type="text" min="0" thumbnail='ft'>
+  <input id='output' type="text" min="0" thumbnail='m'>
+    <br><br>
+    
+    convert from:
+       <select id="whattoconvertfrom" name="chooseconvertinput">
+    <option value="fot">Feet</option>
+    <option value="meter">Meters</option>
+    <option value="liter">Liters</option>
+    <option value="gallon">Gallon</option>
+    <option value="kilogram">Kilogram</option>
+    <option value="pounds">Pounds</option>
+  </select>
+    and to:
+    <select id="whattoconvertto" name="chooseconvertoutput">
+    <option value="fot">Feet</option>
+    <option value="meter">Meters</option>
+    <option value="liter">Liters</option>
+    <option value="gallon">Gallon</option>
+    <option value="kilogram">Kilogram</option>
+      <option value="pounds">Pounds</option>
+  </select>
+    <br>
+    <button onclick='convert()'>convert</button>
+  <script src="index.js"></script>
+</body>
+
+</html>
